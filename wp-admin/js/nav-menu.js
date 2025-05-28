@@ -1292,8 +1292,8 @@
 				if ( this.checked === true ) {
 					$( '#pending-menu-items-to-delete ul' ).append(
 						'<li data-menu-item-id="' + menuItemID + '">' +
-							'<span class="pending-menu-item-name">' + menuItemName + '</span> ' +
-							'<span class="pending-menu-item-type">(' + menuItemType + ')</span>' +
+							'<span class="pending-menu-item-name">' + wp.html.escape(menuItemName) + '</span> ' +
+							'<span class="pending-menu-item-type">(' + wp.html.escape(menuItemType) + ')</span>' +
 							'<span class="separator"></span>' +
 						'</li>'
 					);
